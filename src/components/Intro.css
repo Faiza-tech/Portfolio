@@ -1,0 +1,97 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+.introContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+.introName{
+    color: yellow;
+}
+.introPara{
+    font-size: medium;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.btn{
+    background-color: white;
+    margin: 1rem 0;
+    padding: .75rem 2rem;
+    border-radius: 2rem;
+    border: none;
+}
+@media screen and (max-width:840px) {
+    .bg{
+        right:-10vw;
+    }
+    .mainintro-Content{
+        font-size: 10vwvw;
+    }
+    .introName{
+        color: rgb(73, 113, 55);
+        font-weight:bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .hello{
+        font-size: 4.5vw;
+    }
+}
+@media screen and (max-width:700px) {
+    .bg{
+        right:-8rem;
+    }
+    .mainintro-Content{
+        font-size: 8vw;
+    }
+    .introName{
+        color: rgb(73, 113, 55);
+        font-weight:bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .hello{
+        font-size: 4vw;
+    }
+    
+}
+@media screen and (max-width:480px) {
+    .bg{
+        right:-8rem;
+    }
+    .mainintro-Content{
+        font-size: 10vw;
+    }
+    .introName{
+        color: rgb(73, 113, 55);
+        font-weight:bold;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    .hello{
+        font-size: 5.5vw;
+    }
+    
+}
