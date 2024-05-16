@@ -8,22 +8,32 @@ const Contact = () => {
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-    
-        emailjs
-          .sendForm('service_fxkmos4', 'template_75h63b3', form.current, {
-            publicKey: 'oFuNlKly5wrC1Eh55',
-          })
-          .then(
-            (result) => {
-                console.log(result.text); // Log the result text
-                e.target.reset(); // Reset the form
-                alert('Email sent successfully !'); // Display an alert SUCCESS
-              },
-            (error) => {
-              console.log('FAILED...', error.text);
-            },
-          )
+
+        // Validate form fields
+        const name = form.current.your_name.value;
+        const email = form.current.your_email.value;
+        const message = form.current.message.value;
+
+        if (!name || !email || !message) {
+            alert('Please fill in all fields.'); // Display an alert if any field is empty
+            return;
         }
+
+        emailjs
+            .sendForm('service_fxkmos4', 'template_75h63b3', form.current, {
+                publicKey: 'oFuNlKly5wrC1Eh55',
+            })
+            .then(
+                (result) => {
+                    console.log(result.text); // Log the result text
+                    e.target.reset(); // Reset the form
+                    alert('Email sent successfully !'); // Display an alert SUCCESS
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            )
+    }
 
     return (
 
@@ -52,7 +62,7 @@ const Contact = () => {
             <div id="contacts">
                 <h1 className="contactPageTitle">Contact Me</h1>
                 <span className="contactDesc">Please fill out the form below to discuss any work oppertunities.</span>
-                <form  className="contactForm"  ref={form} onSubmit={sendEmail}>
+                <form className="contactForm" ref={form} onSubmit={sendEmail}>
                     <input type="text" className='name' placeholder='Your Name' name="your_name" />
 
                     <input type="email" className='email' placeholder='Your Email' name="your_email" />

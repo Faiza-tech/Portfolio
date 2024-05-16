@@ -38,6 +38,16 @@ const About = () => {
               </ul>
             </div>
 
+            <div className="skills-5">
+              <h4>Backend Development:</h4>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+                <li>Prisma</li>
+              </ul>
+            </div>
+
             <div className="skills-2">
               <h4>Design:</h4>
               <ul>
@@ -65,15 +75,7 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="skills-5">
-              <h4>Backend Development:</h4>
-              <ul>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>PostgreSQL</li>
-                <li>Prisma</li>
-              </ul>
-            </div>
+           
 
             <div className="skills-6">
               <h4>Project Management:</h4>

@@ -15,7 +15,8 @@
     object-fit: cover;
     height: 100vh;
 }
-.introContent{
+
+.introContent {
     height: 100vh;
     width: 100vw;
     padding: 2rem;
@@ -26,72 +27,99 @@
     justify-content: center;
     color: white;
 }
-.hello{
+
+.hello {
     font-size: 1.75rem;
     font-weight: 100;
 }
-.introName{
+
+.introName {
     color: yellow;
 }
-.introPara{
+
+.introPara {
     font-size: medium;
     letter-spacing: 1px;
     font-weight: 300;
 }
-.btn{
+
+.btn {
     background-color: white;
     margin: 1rem 0;
-    padding: .75rem 2rem;
+    /* padding: .75rem 2rem;*/
     border-radius: 2rem;
-    border: none;
+    /*new addition*/
+    width: 150px;
+    height: 55px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border: 2px solid transparent;
 }
+
+.btn:hover {
+    background-image: linear-gradient(to right, #ffff00, #0000ff);
+    /* Same gradient on hover */
+    border-color: #666;
+}
+
 @media screen and (max-width:840px) {
-    .bg{
-        right:-10vw;
+    .bg {
+        right: -10vw;
     }
-    .mainintro-Content{
+
+    .mainintro-Content {
         font-size: 10vwvw;
     }
-    .introName{
+
+    .introName {
         color: rgb(73, 113, 55);
-        font-weight:bold;
+        font-weight: bold;
         font-family: 'Times New Roman', Times, serif;
     }
-    .hello{
+
+    .hello {
         font-size: 4.5vw;
     }
 }
+
 @media screen and (max-width:700px) {
-    .bg{
-        right:-8rem;
+    .bg {
+        right: -8rem;
     }
-    .mainintro-Content{
+
+    .mainintro-Content {
         font-size: 8vw;
     }
-    .introName{
+
+    .introName {
         color: rgb(73, 113, 55);
-        font-weight:bold;
+        font-weight: bold;
         font-family: 'Times New Roman', Times, serif;
     }
-    .hello{
+
+    .hello {
         font-size: 4vw;
     }
-    
+
 }
+
 @media screen and (max-width:480px) {
-    .bg{
-        right:-8rem;
+    .bg {
+        right: -8rem;
     }
-    .mainintro-Content{
+
+    .mainintro-Content {
         font-size: 10vw;
     }
-    .introName{
+
+    .introName {
         color: rgb(73, 113, 55);
-        font-weight:bold;
+        font-weight: bold;
         font-family: 'Times New Roman', Times, serif;
     }
-    .hello{
+
+    .hello {
         font-size: 5.5vw;
     }
-    
+
 }

@@ -54,9 +54,32 @@
      background: rgb(40,40,40);
  }
  .submitBtn{
-     background: wheat;
+     background: rgb(179, 220, 233);
      border: none;
      padding: .75rem 3.5rem;
      border-radius: .5rem;
      margin: 2rem;
+     font-size: 1rem;
+     font-weight: 500;
  }
+
+ .name:hover, .email:hover, .msg:hover {
+  background: rgba(189, 187, 234, 0.1); /* Lighten the background color on hover */
+ 
+}
+
+/*.submitBtn:hover {
+  background: #ffd700; * Change the background color of the button on hover *
+  color: black; * Change the text color of the button on hover *
+}*/
+.submitBtn:hover {
+  background: #f1eabd; /* Change the background color of the button on hover */
+  color: black; /* Change the text color of the button on hover */
+  border: 5px solid transparent; /* Hide original border */
+  border-image: linear-gradient(to right, #ffff00, #0000ff); /* Gradient border on hover */
+  border-image-slice: 1; /* Ensure full border coverage */
+  border-radius: .5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
