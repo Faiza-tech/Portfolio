@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/Project.css'
-import Portfolio from '../assets/brewery.png'
+//import Portfolio from '../assets/brewery.png'
 import Green from '../assets/reactGrenGrocers.png'
 import Dog from '../assets/dogOwner.png'
 
@@ -12,16 +12,11 @@ const Project = () => {
 
       <div className="worksImgs">
 
-        {/*<div className="card">
-          <img src={Portfolio} alt="" width={350} height={250} />
-          <h1>title</h1>
-          <p>description</p>
-          <p></p>
-        </div>*/}
-
         <div className="card">
 
-          <img src={Green} alt="" width={350} height={250} />
+          <a href="https://github.com/Faiza-tech/react-greengrocers" target="_blank" rel="noopener noreferrer">
+            <img src={Green} alt="" width={350} height={250} />
+          </a>
           <h1>React Greengrocers</h1>
 
           <p>
@@ -34,7 +29,10 @@ const Project = () => {
 
         <div className="card">
 
+          
+          <a href="https://github.com/Faiza-tech/js-dom-dog-owners" target="_blank" rel="noopener noreferrer">
           <img src={Dog} alt="" width={350} height={250} />
+          </a>
           <h1>Dog Owner</h1>
 
           <p>Render the top list of dogs using the list item template,When you click on an item, the selected dog should display on the main card,The main card should contain all the information from the selected dog </p>
@@ -42,7 +40,7 @@ const Project = () => {
 
 
       </div>
-      {/** <button className="workBtn">See More</button>*/}
+     
     </section>
   )
 }
