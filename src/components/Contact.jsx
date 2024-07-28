@@ -49,10 +49,10 @@ const Contact = () => {
                         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                             <FaFacebook size={30} style={{ color: '#1877f2', marginRight: '20px' }} />
                         </a>
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/faiza-khan-101a8b92" target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size={30} style={{ color: '#0e76a8', marginRight: '20px' }} />
                         </a>
-                        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/Faiza-tech" target="_blank" rel="noopener noreferrer">
                             <FaGithub size={30} style={{ color: '#6e5494', marginRight: '20px' }} />
                         </a>
                     </div>
