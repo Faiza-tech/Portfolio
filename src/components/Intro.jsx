@@ -14,7 +14,9 @@ const Intro = () => {
     link.click();
     document.body.removeChild(link);*/
       // Open the download link in a new window
-      window.open('https://app.enhancv.com/share/9632fa27/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic', '_blank');
+      //window.open('https://app.enhancv.com/share/9632fa27/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic', '_blank');
+      window.open(' https://app.enhancv.com/share/ba8e04d0', '_blank');
+      // https://app.enhancv.com/share/ba8e04d0
   }
 
   return (

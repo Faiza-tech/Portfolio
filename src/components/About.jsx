@@ -42,6 +42,7 @@ const About = () => {
               <h4>Backend Development:</h4>
               <ul>
                 <li>Node.js</li>
+                <li>C#</li>
                 <li>Express</li>
                 <li>PostgreSQL</li>
                 <li>Prisma</li>
@@ -57,15 +58,6 @@ const About = () => {
               </ul>
             </div>
 
-            <div className="skills-3">
-              <h4>Tools & Technologies:</h4>
-              <ul>
-                <li>Git & Version Control</li>
-                <li>Visual Studio Code</li>
-                <li>Responsive Design Frameworks (e.g: Bootstrap)</li>
-              </ul>
-            </div>
-
             <div className="skills-4">
               <h4>Soft Skills:</h4>
               <ul>
@@ -75,7 +67,16 @@ const About = () => {
               </ul>
             </div>
 
-           
+            <div className="skills-3">
+              <h4>Tools & Technologies:</h4>
+              <ul>
+                <li>Git & Version Control</li>
+                <li>AWS (Amazon Web Services)</li>
+                <li>Tailwind CSS</li>
+                <li>Sass (Syntactically Awesome Stylesheets)</li>
+                <li>Responsive Design Frameworks (e.g: Bootstrap)</li>
+              </ul>
+            </div>
 
             <div className="skills-6">
               <h4>Project Management:</h4>
