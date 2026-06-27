@@ -130,3 +130,16 @@ There are various approaches, and it depends on what sort of site/application yo
 
   > Whichever Netlify  guide you follow, be sure to do the steps fo adding a `_redirects` file to enable both React SPA 
   > and React with Routing apps to work properly. 
+
+
+
+
+--------------------
+
+Since your theme is black + yellow, I'd use:
+
+Background: #000
+Cards: #111
+Accent: #FFD60A
+Text: #fff
+Secondary text: #a1a1aa

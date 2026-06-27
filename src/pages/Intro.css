@@ -1,0 +1,302 @@
+#intro {
+    height: calc(100vh - 4rem);
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* RIGHT SIDE IMAGE */
+.bg {
+    position: absolute;
+     bottom:0;
+   /* top: 2rem;*/
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    /*height: 100vh;*/
+    height:85vh;
+}
+
+
+
+/* LEFT CONTENT */
+
+.introContent {
+
+    height:100%;
+
+    width:55%;
+
+    padding:2rem;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    color:white;
+
+}
+
+/* HELLO */
+
+.hello {
+
+    font-size:1.5rem;
+
+    font-weight:300;
+
+    margin-bottom:10px;
+
+}
+
+/* MAIN TITLE */
+
+.introText {
+
+    font-size:3.5rem;
+
+    line-height:1.2;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+.jobTitle{
+    font-size:2rem;
+    color:#d1d5db;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+
+.introName {
+    color: yellow;
+     /* color: #fff04d;   /*#ffd700;*/
+}
+
+
+/* DESCRIPTION */
+/*.introPara {
+    font-size: medium;
+    letter-spacing: 1px;
+    font-weight: 300;
+}*/
+.introPara {
+
+
+    max-width:520px;
+
+    font-size:1.05rem;
+
+    line-height:1.7;
+
+    letter-spacing:.3px;
+
+    font-weight:300;
+
+    color:#d1d5db;
+
+    margin-bottom:20px;
+
+
+}
+
+/* BUTTON */
+
+.btn {
+
+    width:160px;
+
+    height:55px;
+
+    border-radius:30px;
+
+    border:none;
+
+    background:white;
+
+    color:black;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn:hover {
+    background-image: linear-gradient(to right  bottom, #ffff00, #0000ff);
+    /* Same gradient on hover */
+    border-color: #666;
+}
+
+/* TABLET */
+
+
+@media screen and (max-width:900px){
+
+
+.bg {
+
+    opacity:.35;
+
+    height:80vh;
+
+    right:-100px;
+
+}
+
+
+
+.introContent {
+
+    width:80%;
+
+}
+
+
+.introText {
+
+    font-size:2.8rem;
+
+}
+
+
+
+}
+
+
+
+
+/* MOBILE */
+
+
+@media screen and (max-width:600px){
+
+
+#intro {
+
+    height:auto;
+
+    min-height:100vh;
+
+}
+
+
+
+.bg {
+
+    right:-150px;
+
+    height:70vh;
+
+}
+
+
+
+.introContent {
+
+    width:100%;
+
+    padding:1.5rem;
+
+}
+
+
+
+.hello {
+
+    font-size:1.2rem;
+
+}
+
+
+
+.introText {
+
+    font-size:2.3rem;
+
+}
+
+
+
+.introPara {
+
+    font-size:.95rem;
+
+    max-width:100%;
+
+}
+
+
+
+}
+
+
+/*   scroll  */
+.scrollDown{
+
+position:absolute;
+
+bottom:30px;
+
+left:50%;
+
+transform:translateX(-50%);
+
+width:45px;
+
+height:45px;
+
+border:2px solid #ffd600;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+color:#ffd600;
+
+font-size:18px;
+
+animation:bounce 1.8s infinite;
+
+transition:.3s;
+
+}
+
+.scrollDown:hover{
+
+background:#ffd600;
+
+color:#000;
+
+}
+
+@keyframes bounce{
+
+0%,20%,50%,80%,100%{
+transform:translateX(-50%) translateY(0);
+}
+
+40%{
+transform:translateX(-50%) translateY(-10px);
+}
+
+60%{
+transform:translateX(-50%) translateY(-5px);
+}
+
+}

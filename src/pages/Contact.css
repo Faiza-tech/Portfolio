@@ -1,0 +1,81 @@
+#contactPage{
+    min-height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 60rem;
+    margin: 6rem auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+   .intouch>h1{
+     text-align: center;
+     font-size: 3rem;
+   }
+   .intouch>p{
+     margin: 10px 0;
+     line-height: 1.8rem; /**see later**/
+     font-size: 18px; /*see later**/
+   }
+   .intouch>p>span>a{
+   color:#fff04d; /* #4caf50;*/
+  }
+
+  .contactPageTitle{
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    margin-top: 2.8rem;
+}
+#contactDesc{
+    padding: 1rem;
+    font-size: medium;
+    font-weight: 300;
+ }
+ .contactForm{
+     margin: 1rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     width: 90vw;
+     max-width: 60rem;
+ }
+ .name, .email, .msg {
+     font-size: medium;
+     width: 100%;
+     max-width: 40rem;
+     margin: 0.5rem;
+     padding: .5rem 1rem;
+     color: white;
+     border: none;
+     border-radius: .5rem;
+     background: rgb(40,40,40);
+ }
+ .submitBtn{
+     background:  #f1eabd; /*  rgb(179, 220, 233);*/
+     border: none;
+     padding: .75rem 3.5rem;
+     border-radius: .5rem;
+     margin: 2rem;
+     font-size: 1rem;
+     font-weight: 500;
+ }
+
+ .name:hover, .email:hover, .msg:hover {
+  background: rgba(189, 187, 234, 0.1); /* Lighten the background color on hover */
+ 
+}
+
+.submitBtn:hover {
+  background: rgb(179, 220, 233); /* #f1eabd; /* Change the background color of the button on hover */
+  color: black; /* Change the text color of the button on hover */
+  border: 5px solid transparent; /* Hide original border */
+  border-image: linear-gradient(to right, #ffff00, #0000ff); /* Gradient border on hover */
+  border-image-slice: 1; /* Ensure full border coverage */
+  border-radius: .5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
