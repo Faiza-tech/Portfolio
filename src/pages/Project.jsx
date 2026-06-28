@@ -32,13 +32,34 @@ const projects = [
       "A full-stack platform helping Pakistani expatriates access useful UK information.",
 
     description:
-      `A Full-Stack web application designed to assist Pakistani expatriates by providing essential information about living in the UK, including education, healthcare, and more.
+      /* `A Full-Stack web application designed to assist Pakistani expatriates by providing essential information about living in the UK, including education, healthcare, and more.
+ 
+       Users can explore different categories and access resources to ease their transition abroad.
+ 
+ 
+       Guest Login:
+       Email: boolean@gmail.com
+       Password: 12345`,*/
+      (<>
+        A Full-Stack web application designed to assist Pakistani expatriates by
+        providing essential information about living in the UK, including
+        education, healthcare, and more.
 
-Users can explore different categories and access resources to ease their transition abroad.
-
-Guest Login:
-Email: boolean@gmail.com
-Password: 12345`,
+        <br />
+        Users can explore different categories and access resources to ease their
+        transition abroad.
+        <br />
+        
+        <strong>
+          Guest Login:
+        </strong>
+        <br />
+        Email: boolean@gmail.com
+        <br />
+        Password: 12345
+        <br /> <br />
+      </>
+      ),
 
     tags: [
       "React.js",
@@ -95,7 +116,7 @@ The project includes dynamic state management where products are automatically u
     tags: [
       "React.js",
       "State Management",
-      "JavaScript"
+      /*"JavaScript"*/
     ]
 
   },
@@ -207,14 +228,22 @@ const Project = () => {
 
               <div className="projectCard">
 
-                <div className="projectImg">
+                {/* <div className="projectImg">
+                      <img src={project.image} alt={project.title} />
+                    </div>*/}
 
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                  />
+                <div className="projectImg" onClick={() => setSelectedProject(project)} >
+
+                  <img src={project.image} alt={project.title} />
+
+                  <div className="projectOverlay">
+                    <span className="viewBtn">
+                      View Details
+                    </span>
+                  </div>
 
                 </div>
+
 
                 <div className="projectContent">
 
@@ -295,7 +324,7 @@ const Project = () => {
 
           <div className="projectModal">
 
-
+            {/* Close Button */}
             <button
               className="closeBtn"
               onClick={() => setSelectedProject(null)}
@@ -303,25 +332,20 @@ const Project = () => {
               ✕
             </button>
 
-
-
             <h2>
               {selectedProject.title}
             </h2>
 
-
-            <p>
+            <p >
               {selectedProject.description}
             </p>
-
-
 
             <h4>
               Technologies
             </h4>
 
-
-            <div className="tags">
+            {/* MoDal Tag */}
+            <div className="ModalTags">
 
               {
                 selectedProject.tags.map((tag, index) => (
@@ -337,38 +361,28 @@ const Project = () => {
             </div>
 
 
-
-
-            <div className="buttons">
-
+            {/* Modal Buttons */}
+            <div className="modalButtons">
 
               <a
                 href={selectedProject.github}
                 target="_blank"
                 rel="noreferrer"
               >
-
                 <FaGithub />
-                Github
-
+                <span>Github</span>
               </a>
-
-
 
               <a
                 href={selectedProject.live}
                 target="_blank"
                 rel="noreferrer"
               >
-
                 <FaExternalLinkAlt />
-                Live Demo
-
+                <span>Live Demo</span>
               </a>
 
-
             </div>
-
 
 
           </div>
